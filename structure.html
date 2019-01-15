@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NAVIGATION BAR</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img style="display:inline; width:35px;" src="https://getbootstrap.com/assets/img/bootstrap-stack.png" alt="Logo" /> My Webpage</a>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active slide"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a>
+                            </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span> Menu <span class="caret"></span></a> 
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="slide"><a href="#tabs">● Menu 1 Tabs</a></li>
+                                <li class="slide"><a href="#list">● Menu 2 List</a></li>
+                                <li class="slide"><a href="#coll">● Menu 3 Collapse</a></li>
+                            </ul>
+                        </li>
+                        <li class="slide"><a href="#media">Media area</a></li>
+                        <li class="slide"><a href="#modal">Modal</a></li>
+                        <li class="slide"><a href="#">About us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="slide"><a href="#log"><span class="glyphicon glyphicon-log-in"></span> Log in as another user</a></li>
+                        <li class="slide"><a href="#log"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br/><br/>
+        <!-- hsjallalalaalaplajak -->
+<div id="c" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#c" data-slide-to="0"></li>
+            <li data-target="#c" data-slide-to="1"></li>
+            <li data-target="#c" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="active item">
+                <img style="height:225px; width:100%" src="http://www.hdwallpaperup.com/wp-content/uploads/2014/12/Gate-To-Firmament-1024x768.jpg" alt="First">
+                <div class="carousel-caption">
+                    <h3>Starry Night</h3>
+                    <p>The original and natural version</p>
+                </div>
+            </div>
+            <div class="item">
+                <img style="height:225px; width:100%" src="https://media1.fdncms.com/indyweek/imager/u/magnum/6209556/5.10_news_sun_photo.jpg" alt="Second">
+                <div class="carousel-caption">
+                    <h3>Clouds</h3>
+                    <p>A mixed atmosphere</p>
+                </div>
+            </div>
+            <div class="item">
+                <img style="height:225px; width:100%" src="http://static.hdw.eweb4.com/media/wallpapers_2560x1600/fantasy/1/1/outer-space-fantasy-hd-wallpaper-2560x1600-6665.jpg" alt="Third">
+                <div class="carousel-caption">
+                    <h3>Galaxy</h3>
+                    <p>From the simple sky to beyond galaxy</p>
+                </div>
+            </div>
+        </div>
+        <a href="#c" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#c" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+        <div class="container">
+            <!-- PAGE HEADER -->
+    <h1 class="page-header">Bootstrap Practice Area</h1>
+<!-- JUMBOTRON -->
+    <div class="jumbotron">
+        <h2>Best Learning Webpage</h2>
+        <p>Here you can...</p>
+    </div>
+    <p>Moreover you can take a look to the rest of this Bootstrap page. There are a lot of things in it.</p>
+<!-- TAB PAN -->
+    <h1 id="tabs">Tab Panels</h1>
+            <p>This is a demostration of a tab panel, with different menus to navigate through.</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#maths" data-toggle="tab">Maths</a></li>
+                <li><a href="#physics" data-toggle="tab">Physics</a></li>
+                <li><a href="#biology" data-toggle="tab">Biology</a></li>
+                <li><a href="#science" data-toggle="tab">Science</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="maths" class="tab-pane fade in active">
+                    <h1>Maths and Science</h1>
+                    <p>We are going to talk about the relationship between science and the maths. Maths is the queen of all Sciences.</p>
+                </div>
+                <div id="physics" class="tab-pane fade">
+                    <h1>Physics</h1>
+                    <p>On the other hand, physics is the most applicable science in our daily life. The dynamics, termodynamics, motion and many others are present everywhere.</p>
+                </div>
+                <div id="biology" class="tab-pane fade">
+                    <h1>Biology</h1>
+                    <p>Another important science is biology, or thr science of life. It studies all the living creatures, from the small ones like viruses or bacteria, to the most complex ones as us, humans. It is interesting, intriguing and if you have a little bit imagination, you can do big things in it.</p>
+                </div>
+                <div id="science" class="tab-pane fade">
+                    <h1>Science</h1>
+                    <p>In absence of a single name, we use the term Science to put all of them together. It includes maths, physics, chemistry, biology, IT ect. The science has made possible all the evolution we have been through amd the advance of it is what we expect in the future.</p>
+                </div>
+            </div>
+            <hr>
+<!-- PROGRESS BAR -->
+    <h3>A progress bar</h3>
+    <p>As you can see it is 50% completed and it is active. But it cannot load and advance.</p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;">50%</div>
+    </div>
+    <h3 id="modal">Modals</h3>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#mod">Modal</button>
+    <div id="mod" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h3>Saved</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Your information was saved successfully. Now you can log in into our app as many times as you want.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>An alert box when the progress is 100%.</h3>
+<!-- ALERT -->
+  <div id="success" class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss ="alert" aria-label="close">&times;</a>
+    Congrats!!! Your action was completed     </div>
+<!-- Media -->
+<div id="media" class="media">
+            <div class="media-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" class="media-object" style="width:50px;" alt="" />
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">Picture 1 <small>Posted in 01.10.2017</small></h3>
+                <p>Nankakalansuaikakap sjsooa ausksn sysna aua ua sua sisvsua a suaus a auabai sjak sua aoavfka od kav dia dia dud kz dkx rkr osvrod ror ror rk rksveo ai ek dkr fkf zj dusd dj dis s</p>
+                <div class="media">
+            <div class="media-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" class="media-object" style="width:50px;" alt="" />
+            </div>
+            <div class="media-body">
+                <h3 class="media-heading">Picture 2 <small>Posted in 01.10.2017</small></h3>
+                <p>Nankakalansuaikakap sjsooa ausksn sysna aua ua sua sisvsua a suaus a auabai sjak sua aoavfka od kav dia dia dud kz dkx rkr osvrod ror ror rk rksveo ai ek dkr fkf zj dusd dj <a href="#" title="Tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="top">ajakl</a> dis s</p>
+            </div>
+         </div>
+      </div>
+   </div>
+<!-- LIST GROUP -->
+<h3 id="list">List group with products</h3>
+<p>Here is a list of products and their nutrients. There are no links or tables, but jus a simple bordered rectangle and some text.</p>
+<form class="form-group">
+    <label for="sea">Search item </label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+    <input id="search" type="text" class="form-control"/>
+    </div>
+</form>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h4 class="heading">Product 1</h4>
+            <p class="text">This contains fats and carbohydrates.</p>
+        </li>
+        <li class="list-group-item">
+        <h4 class="heading">Product 2</h4>
+        <p class="text">This contains proteins and vitamins.</p>
+        </li>
+        <li class="list-group-item">
+            <h4 class="heading">Product 3</h4>
+            <p class="text">This contains only water and fibres.</p>
+        </li>
+    </ul>
+<!-- Collapse button -->
+    <h3 id="coll">Collapse Button</h3>
+    <button class="btn btn-success" data-toggle="collapse" data-target="#hidden">Click here</button>
+    <div id="hidden" class="collapse"><br/>You are lucky you opened this because i was affraid you wouldnt notice it. Now read it and take the hidden message. And waiting for your message.</div><br/>
+    <h3 id="log">Log in </h3>
+    <form>
+            <label for="email">Email and Password:</label>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input type="password" class="form-control" />
+                </div>
+            </form>
+<!-- Previous or next -->
+    <ul class="pager">
+        <li class="previous"><a href="#"><span class="glyphicon glyphicon-circle-arrow-left"></span> Previous</a></li>
+        <li class="next"><a href="#">Next <span class="glyphicon glyphicon-circle-arrow-right"></span></a></li>
+    </ul>
+        </div>
+    </body>
+</html>
